@@ -19,7 +19,7 @@ typedef struct hash_t{
     struct hash_t *next;
 } hash_t;
 
-
+/*test*/
 /*----- 公開する関数 -----*/
 
 void add_table(const char *var, int adr, int name_type, int range_type);
