@@ -1,0 +1,59 @@
+#!/bin/bash
+
+# archive  ...  コンパイラ実験のソースコード提出用アーカイブを作成
+
+# 作成者： 山田俊行
+# 作成日： '15.12.7
+# 更新日： '17.4.4
+# 更新日： '17.8.10
+
+sourcedir=CPrime
+builddir=main
+libdir=library
+id=`/usr/bin/whoami`
+copydir=compiler-$id
+exefile=compile
+tarfile=compiler-$id.tar
+
+echo "●アーカイブ作成開始"
+cd $HOME
+if [ ! -d $sourcedir ]; then
+    echo "*** ディレクトリ $sourcedir がありません．中断します．***"
+    exit 1
+fi
+if [ ! -d $sourcedir/$builddir -o ! -d $sourcedir/$libdir ]; then
+    echo "*** ディレクトリ $sourcedir が不完全です．中断します．***"
+    exit 1
+fi
+[ -f $tarfile ] && /bin/rm $tarfile
+[ -e $copydir ] && /bin/rm -r $copydir
+/bin/cp -r $sourcedir $copydir
+/bin/chmod -R +w $copydir
+if [ ! -d $copydir ]; then
+    echo "*** ディレクトリ $copydir にコピーできません．中断します．***"
+    exit 2
+fi
+
+echo "●実行ファイル $exefile 作成の確認"
+cd $copydir/$builddir
+/usr/bin/make clean
+/usr/bin/make $exefile
+if [ ! -x $exefile ]; then
+    echo "*** 実行ファイル $exefile の作成に失敗しました．中断します．***"
+    cd ../..
+    /bin/rm -r $copydir
+    exit 3
+fi
+/usr/bin/make clean
+cd ../..
+
+echo "●提出用アーカイブ $tarfile 作成"
+/bin/tar cfv $tarfile $copydir/$builddir $copydir/$libdir
+/bin/chmod og-rw $tarfile
+/bin/rm -r $copydir
+if [ ! -f $tarfile ]; then
+    echo "*** アーカイブ $tarfile の作成に失敗しました．中断します．***"
+    exit 4
+fi
+
+echo "●アーカイブ作成完了"

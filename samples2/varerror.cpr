@@ -1,0 +1,5 @@
+var i, i;
+fun void main() {
+  i = 1;
+  j = 2;
+}

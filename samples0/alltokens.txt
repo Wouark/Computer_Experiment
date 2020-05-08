@@ -1,0 +1,10 @@
+if else while return
+var fun
+void int
++ - * / %
+> >= < <= == !=
+=
+( ) { }
+, ;
+123 x
+?

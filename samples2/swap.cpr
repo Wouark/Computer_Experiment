@@ -1,0 +1,6 @@
+var n1, n2, w;
+fun void main() {
+  n1 = input(); n2 = input();
+  w = n1; n1 = n2; n2 = w;
+  output(n1); output(n2);
+}

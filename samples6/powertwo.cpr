@@ -1,0 +1,20 @@
+var pow;
+
+fun void double() {
+  pow = pow*2;
+}
+
+fun int powertwo(n) {
+  pow = 1;
+  while (n > 0) {
+    double();
+    n = n-1;
+  }
+  return pow;
+}
+
+fun void main() {
+  var n;
+  n = input();
+  output(powertwo(n));
+}

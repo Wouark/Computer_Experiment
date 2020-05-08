@@ -1,0 +1,12 @@
+var x, y, xor;
+fun void main() {
+  x = input(); y = input();
+  xor = 0;
+  if (x == 0)
+    if (y != 0)
+      xor = 1;
+  else
+    if (y == 0)
+      xor = 1;
+  output(xor);
+}

@@ -1,0 +1,18 @@
+var it;
+
+fun void readit() {
+  it = input();
+}
+
+fun void writeit() {
+  output(it);
+}
+
+fun void doubleit() {
+  it = 2*it;
+}
+
+fun void main() {
+  it = -1;              writeit();
+  readit(); doubleit(); writeit();
+}

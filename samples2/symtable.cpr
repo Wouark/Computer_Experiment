@@ -1,0 +1,5 @@
+var x, y;
+fun void main() {
+  x = 5;
+  y = x;
+}

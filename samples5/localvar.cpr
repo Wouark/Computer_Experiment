@@ -1,0 +1,14 @@
+var w, x;
+
+fun void sub() {
+  var w;
+  w = 300;
+  output(w+x);
+}
+
+fun void main() {
+  w = 100;
+  x = 200;
+  sub();
+  output(w+x);
+}

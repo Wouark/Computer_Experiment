@@ -1,0 +1,38 @@
+===== readtokens =====
+===== gencode =====
+   0:  LDC   0   7
+   1:  LDC   0   8
+   2:  AOP   0   0
+   3:  LDC   0   9
+   4:  AOP   0   1
+   5:  WLN   0   0
+   6:  STP   0   0
+===== compileseq =====
+0, 1, 2,
+3, 4, 5
+LDC   0   0
+WLN   0   0
+LDC   0   1
+WLN   0   0
+LDC   0   2
+WLN   0   0
+LDC   0   3
+WLN   0   0
+LDC   0   4
+WLN   0   0
+LDC   0   5
+WLN   0   0
+STP   0   0
+===== rewriteaddress =====
+   0:  RLN   0   0
+   1:  FJP   0  -1
+   2:  LDC   0 100
+   3:  WLN   0   0
+   4:  STP   0   0
+code_addr = 1
+jump_addr = 4
+   0:  RLN   0   0
+   1:  FJP   0   4
+   2:  LDC   0 100
+   3:  WLN   0   0
+   4:  STP   0   0

@@ -1,0 +1,15 @@
+UJP   0  11
+XST   0   0
+LDC   0 100
+WLN   0   0
+RET   0   0
+XST   0   0
+MST   0   0
+CAL   0   1
+LDC   0 200
+WLN   0   0
+RET   0   0
+MST   0   0
+CAL   0   5
+XST   0   0
+STP   0   0

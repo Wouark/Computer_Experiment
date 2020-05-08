@@ -1,0 +1,7 @@
+fun int succ(n) {
+  return n+1;
+}
+
+fun void main() {
+  output(succ(99));
+}

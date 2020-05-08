@@ -1,0 +1,16 @@
+var x, y, xy;
+fun void main() {
+  x = 0;
+  while (x <= 1) {
+    y = 0;
+    while (y <= 1) {
+      xy = 0;
+      if (x != 0)
+        if (y != 0)
+          xy = 1;
+      output(xy);
+      y = y+1;
+    }
+    x = x+1;
+  }
+}

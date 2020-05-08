@@ -1,0 +1,14 @@
+XST   0   3
+UJP   0  10
+XST   0   0
+LDC   0 100
+STR   0   0
+LDC   0 200
+STR   0   1
+LDC   0 300
+STR   0   2
+RET   0   0
+MST   0   0
+CAL   0   2
+XST   0  -3
+STP   0   0

@@ -1,0 +1,11 @@
+var x;
+
+fun void addwrite(a) {
+  x = x+a;
+  output(x);
+}
+
+fun void main() {
+  x = 100;
+  addwrite(200);
+}

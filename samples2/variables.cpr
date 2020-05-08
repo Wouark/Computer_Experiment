@@ -1,0 +1,6 @@
+var in, out;
+fun void main() {
+  in = input();
+  out = -in;
+  output(out);
+}

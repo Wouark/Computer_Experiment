@@ -1,0 +1,8 @@
+var a;
+fun void main() {
+  a = input();
+  if (a >= 0)
+    output(a);
+  else
+    output(-a);
+}

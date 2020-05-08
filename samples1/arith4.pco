@@ -1,0 +1,17 @@
+LDC   0   0
+LDC   0  10
+AOP   0   1
+LDC   0  20
+LDC   0  30
+LDC   0   0
+LDC   0  40
+AOP   0   1
+AOP   0   1
+AOP   0   2
+AOP   0   0
+LDC   0  50
+AOP   0   3
+LDC   0  60
+AOP   0   4
+WLN   0   0
+STP   0   0

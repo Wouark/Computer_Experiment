@@ -1,0 +1,4 @@
+fun void main() {
+  output(100+200-300+400);
+  output(-9*(-8+7)%6);
+}

@@ -1,0 +1,11 @@
+var x;
+
+fun void double() {
+  x = x*2;
+}
+
+fun void main() {
+  x = 100;
+  double();
+  output(x);
+}

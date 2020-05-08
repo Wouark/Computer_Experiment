@@ -1,0 +1,12 @@
+XST   0   1
+UJP   0   8
+XST   0   0
+LDC   0 100
+STR   0   0
+LOD   0   0
+WLN   0   0
+RET   0   0
+MST   0   0
+CAL   0   2
+XST   0  -1
+STP   0   0

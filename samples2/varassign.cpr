@@ -1,0 +1,4 @@
+var it;
+fun void main() {
+  it = 10;
+}

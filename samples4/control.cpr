@@ -1,0 +1,6 @@
+var x;
+
+fun void main() {
+  x = 100;
+  output(x);
+}

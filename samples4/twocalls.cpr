@@ -1,0 +1,16 @@
+var n;
+
+fun void subsub() {
+  output(n+300);
+}
+
+fun void sub() {
+  output(n+200);
+  subsub();
+}
+
+fun void main() {
+  n = 0;
+  output(n+100);
+  sub();
+}

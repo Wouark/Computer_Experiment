@@ -1,0 +1,6 @@
+var n;
+fun void main() {
+  n = input();
+  if (n > 0)
+    output(n);
+}

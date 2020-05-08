@@ -1,0 +1,8 @@
+var i;
+fun void main() {
+  i = 0;
+  while (i < 10) {
+    output(i);
+    i = i+1;
+  }
+}

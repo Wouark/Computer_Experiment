@@ -1,0 +1,4 @@
+var x;
+fun void sub()  { x = input(); }
+fun void sub()  { output(x); }
+fun void main() { x = 0; sub(); sub(); }

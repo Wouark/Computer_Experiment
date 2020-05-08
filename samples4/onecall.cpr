@@ -1,0 +1,8 @@
+fun void sub() {
+  output(100);
+}
+
+fun void main() {
+  sub();
+  output(200);
+}
